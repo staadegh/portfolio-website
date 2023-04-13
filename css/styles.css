@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #357b70;
+    --secondary-color: #e0b354;
+    --dark-gray: #2b2b2b;
+    --blue-color: blue;
+    --blueViolet: blueviolet;
+    --cadetblue: cadetblue;
+    --lightCoral: lightcoral;
+    --greenyellow: greenyellow;
+    --rebeccapurple: rebeccapurple;
+    --red: red;
+    --cyan: cyan;
+    --violet: violet;
+    --darkColor: #2b2b2b;
+    --fontSize16: 16px;
+    --lineHeight1_5: 1.5;
+    --fontSize104: 104px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Shared-Variable-Button {
+    color: var(--secondary-color);
+    border-radius: 45%;
+}
+
+body {
+    color: var(--blue-color);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: var(--fontSize16);
+    line-height: var(--lineHeight1_5);
+}
+
+header {
+    line-height: var(--lineHeight1_5);
+    font-size: var(--fontSize16);
+}
+
+.page-header {
+    display: flex;
+}
+
+footer {
+    line-height: var(--lineHeight1_5);
+    font-size: var(--fontSize16);
+}
+
+nav {
+    line-height: var(--lineHeight1_5);
+    font-size: var(--fontSize16);
+}
+
+a:visited {
+    color: var(--cadetblue);
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--blueViolet);
+}
+
+.a-href:hover {
+    font-size: 100px;
+    opacity: 0.4;
+}
+
+.a-href {
+    transition-duration: 4s;
+}
+
+a:active {
+    text-decoration: none;
+    color: var(--darkColor);
+}
+
+a {
+    color: var(--rebeccapurple);
+}
+
+#button-id {
+    color: var(--greenyellow);
+    background-color: var(--blue-color);
+    transition-duration: 1s;
+}
+
+#button-id:hover,
+#button-id:focus {
+    background-color: var(--blueViolet);
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.profile__portrait {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.profile-div {
+    margin: 0 auto;
+    display: flex;
+}
+
+#parent-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+}
+
+.parent-grid-child {
+    background-color: var(--lightCoral);
+    margin: 10px;
+    text-align: center;
+    font-size: var(--fontSize104);
+}
+
+.page-footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    #parent-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.eagle {
+    animation-duration: 5s;
+    animation-name: animate-eagle;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animate-eagle {
+    0% {
+        fill: var(--red);
+    }
+
+    20% {
+        fill: var(--cyan);
+    }
+
+    75% {
+        fill: var(--blueViolet);
+        transform: translate(100px, -48px);
+    }
+
+    100% {
+        fill: var(--violet);
+    }
+}

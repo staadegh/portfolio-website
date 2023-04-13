@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.wikipedia.org/static/favicon/wikipedia.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.production.css" type="text/css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="profile-div">
+        <img
+          src="https://picsum.photos/g/200/200?random"
+          alt="The real image"
+          class="profile__portrait"
+        />
+        <div>
+          <p>Hello World!</p>
+          <p>
+            My name is Lisa Gringl. I am a <span>web</span> developer from
+            Austria.
+          </p>
+          <a href="#">Check out some of my code</a>
+        </div>
+      </div>
+      <nav role="menubar">
+        <nav role="presentation">
+          <a href="about.html" role="menuitem">About Us</a>
+          <a href="index.html" role="menuitem">Home</a>
+          <a href="work.html" role="menuitem">Work</a>
+        </nav>
+      </nav>
+    </header>
+
+    <form action="" method="post">
+      <label for="Contact-Email-id" id="Email-lable-id">Email</label>
+      <input type="email" name="Contact-Email" id="Contact-Email-id" required />
+
+      <label for="telephone-id" id="telephone-label-id">Telephone</label>
+      <input
+        type="tel"
+        name="telephone"
+        id="telephone-id"
+        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+        required
+      />
+
+      <label for="address-id" id="address-label-id">Address</label>
+      <textarea
+        name="address"
+        id="address-id"
+        cols="30"
+        rows="10"
+        required="required"
+      ></textarea>
+
+      <input type="submit" value="Submit Data" />
+    </form>
+
+    <div>
+      <p>Contact</p>
+      Email:
+      <a href="mailto:contact_us@careerFoundy.com"
+        >contact_us@careerFoundy.com</a
+      >
+      <br />
+      Tel: <a href="tel:+123456789">Click To Call Us</a> <br />
+      Contact Us: <a href="mailto:contact_us@careerFoundy.com">Contact Us</a>
+    </div>
+
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div>
+        <img src="./img/Linkedin-64.svg" alt="This image is Linked's logo" />
+        <img src="./img/Github-64.svg" alt="This image is Github's logo" />
+        <img src="./img/twiter-64.svg" alt="This image is Twitter's logo" />
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
